@@ -6,7 +6,7 @@
 }
 
 body{
-    background: url(/obrazky/sora-sagano-Dksk8szLRN0-unsplash.jpg);
+    background: url(/obrazky/wp12460990-4k-aquarium-wallpapers.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -81,7 +81,7 @@ header .menu{
 }
 
 .showcase .nadpisskalar{
-    padding-left: 20px;
+    padding-left: 60px;
     padding-bottom: 15px;
     font-family: Arial;
     letter-spacing: 1.2px;
@@ -92,15 +92,20 @@ header .menu{
 .showcase h2{
     font-family: 'Times New Roman';
     font-size: 50px;
-    padding-left: 10px;
+    padding-left: 20px;
     
     letter-spacing: 2px;
-}
 
+}
+.showcase .podnadpis{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 .showcase .tlacitko{
     width: 160px;
     height: 40px;
     background: #00ff48;
+   
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -112,7 +117,7 @@ header .menu{
 }
 
 .showcase .tlacitko a{
-    text-decoration: none;
+    text-decoration:none;
     color: #ff0000;
     transition: .3s ease;
 }
@@ -229,10 +234,11 @@ header .menu{
 /*tabulka skalar*/
 .table {
     height:14vw;
-    width: 50%;
+    width: 60%;
     grid-area: table;
-    width: 36vw;
     margin-left: 0.4rem;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .table table {
@@ -264,10 +270,134 @@ header .menu{
     padding: 5px;
 }
 
+/*galerie*/
+
+
+
+h5 {
+    color: #fefae0;
+    font-family: Arial;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 10px double #bc6c25;
+}
+
+.galerie img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border: 7px solid #fefae0;
+    filter:grayscale(100%);
+    transition-duration: 1s;
+}
+
+.galerie img:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*gakerie rybicek*/
+
+
+  
+  
+  .heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: rgb(255, 255, 255);
+  }
+  
+  .gallery-image {
+    padding: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 20px;
+    height: 250px; /*mezera mezi obrazky*/
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+  }
+  
+ 
+
+@media (prefers-reduced-motion: no-preference) {
+	figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	a:is(:hover, :focus) img {
+		transform: scale(1.2);
+	}
+}
 /*respon*/
 
-@media screen and (max-width: 700px) {
-   .table{}
-  }
+@media only screen and (max-width: 700px) {
+    .container img {width: 100px;}
+    .table { width: 30%;}
+    .container {padding-left:10px;}
+    } 
 
+  .zmena {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(220px, 220px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.zmena img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
 

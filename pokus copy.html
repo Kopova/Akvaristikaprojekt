@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akvaristika</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../index.html"><h1>Akvaristika</h1></a></div>
+        <ul>
+            <li><a href="../Akvarijnirybicky.html">Akvarijní rybičky</a></li>
+            <li><a href="../Vybavení.html">Vybavení</a></li>
+            <li><a href="../Galerie.html">Galerie</a></li>
+            <li><a href="../Kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            grid-template-areas: 
+                "img desc table"
+                "text text imgs";
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            height: 87vh;
+            padding-left: 150px;
+            
+        }
+        
+        .desc {           
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 50px;
+        }
+        .desc h2 {
+            margin-right: 10vw;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .desc h3 {
+            margin: 0;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .desc ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+     
+        .text {
+    grid-area: text;
+    border: 1px solid black;
+    padding: 10px;
+    
+    
+}
+
+      
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="img"><img src="./obrazky/skalarmnau.300jpg.jpg" alt=""></div>
+        <div class="desc">
+            <h2>Skalára</h2>
+            <h3>Pterodaktyl</h3>
+            <ul>
+                <li>Čeleď: xxxxx</li>
+                <li>Nevím: xxxx</li>
+                <li>Pomoct: xxxxx3</li>
+            </ul>
+        </div>
+        
+        <div class="table"><table>
+            <caption>
+                <p><br></p>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Velikost</th>
+                    <th>Teplota</th>
+                    <th>pH</th>
+                    <th>Cena</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>12</b></td>
+                    <td><b>24</b></td>
+                    <td><b>6</b></td>
+                    <td><b>80</b></td>
+                </tr>
+                <tr>
+                    <td>cm</td>
+                    <td>°C</td>
+                    <td>I</td>
+                    <td>Kč</td>
+                </tr>
+                <tr>
+                    <td><b>20</b></td>
+                    <td><b>28</b></td>
+                    <td><b>7.6</b></td>
+                    <td><b>300</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+        <div class="text">HOVNA HVONA HOVNA MNAM AM DKENVIAEJVIOAMVPMEADPVMAEDPVB</div>
+
+    </div>
+</body>
+</html>
