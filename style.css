@@ -228,16 +228,17 @@ header .menu{
 
 /*tabulka skalar*/
 .table {
-    overflow: auto;
+    height:14vw;
     width: 50%;
-    
+    grid-area: table;
+    width: 35vw;
 }
 
 .table table {
-    border: 1px solid #186726;
+    
     height: 100%;
     width: 100%;
-    table-layout: fixed;
+    table-layout:auto;
     border-collapse: collapse;
     border-spacing: 1px;
     text-align: center;
@@ -249,9 +250,9 @@ header .menu{
 }
 
 .table th {
-    border: 1px solid #0c7d50;
-    background-color: #e52121;
-    color: #000000;
+    
+    background-color: #08551f;
+    color: #d50e0e;
     padding: 5px;
 }
 
