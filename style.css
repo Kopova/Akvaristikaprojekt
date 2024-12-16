@@ -188,12 +188,22 @@ header .menu{
     
     
     
+    
 }
 .gallery .description{
+    padding-top: 10px;
+
+    text-align: center;
+    background-color:rgb(24, 129, 226);
+    
+}
+
+.gallery .description2{
     padding: 10px;
     text-align: center;
-    background-color:chocolate;
-    
+    font-size: 15px;
+    color: #4e4d4e;
+    background-color:rgb(24, 129, 226);
 }
 .gallery:hover{
     border: 1px solid hsl(312, 86%, 30%);
@@ -310,21 +320,22 @@ h5 {
     align-items: center;
 }
 
-/*gakerie rybicek*/
+/*galerie rybicek*/
 
+  
   
   .heading {
       text-align: center;
       font-size: 2.0em;
       letter-spacing: 1px;
       padding: 40px;
-      color: rgb(178, 32, 146);
+      color: white;
   }
   
   .gallery-image {
     padding: 20px;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   
@@ -337,42 +348,51 @@ h5 {
   
   .img-box {
     box-sizing: content-box;
-    margin: 20px;
-    height: 250px; /*mezera mezi obrazky*/
+    margin: 10px;
+    height: 250px;
     width: 350px;
     overflow: hidden;
     display: inline-block;
+    color: white;
     position: relative;
+    background-color: white;
   }
   
+  .popisek {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .popisek {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
  
-
-@media (prefers-reduced-motion: no-preference) {
-	figcaption {
-		transform: translate3d(0, 2rem, 0);
-	}
-	
-	figure::after {
-		border-radius: 50%;
-		opacity: 1;
-		transform: scale(0);
-		transition: transform 900ms;
-	}
-	
-	a:is(:hover, :focus) figure::after {
-		transform: scale(2.5);
-	}
-
-	a:is(:hover, :focus) figcaption {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-		transition: opacity 600ms 400ms, transform 600ms 400ms;
-	}
-
-	a:is(:hover, :focus) img {
-		transform: scale(1.2);
-	}
-}
 /*respon*/
 
 @media only screen and (max-width: 700px) {
