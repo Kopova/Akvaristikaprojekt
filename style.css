@@ -320,7 +320,7 @@ h5 {
     align-items: center;
 }
 
-/*galerie rybicek*/
+/*galerie rybicek, vybaveni, akvaria*/
 
   
   
@@ -393,6 +393,9 @@ h5 {
     cursor: pointer;
   }
  
+  .opacity-low {
+    opacity: 0.5;
+  }
 /*respon*/
 
 @media only screen and (max-width: 700px) {
