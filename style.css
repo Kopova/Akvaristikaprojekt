@@ -316,6 +316,14 @@ h5 {
 .galerie {
     display: flex;
     flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.stred {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
