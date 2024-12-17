@@ -6,7 +6,7 @@
 }
 
 body{
-    background:url(./obrazky/sora-sagano-Dksk8szLRN0-unsplash.jpg) center center/cover;
+    background:url(./obrazky/llllllllllllllll.png) center center/cover;
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -16,7 +16,6 @@ body{
 .container{
     width: 100%;
     height: auto;
-    
     background-color: rgba(0,0,0,0.4);
     display:block;
     align-items: center;
@@ -40,7 +39,7 @@ header{
     position: sticky;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background: rgba(66, 176, 193, 0.5);
+    background: rgba(58,18,43, 0.5);
     
 }
 header .logo a{
@@ -50,7 +49,7 @@ header .logo a{
 header .logo h1{
     flex:2;
     font-size: 3rem; /*velikost slova Akvaristika*/
-    color:rgb(0, 0, 0); 
+    color:rgb(232, 108, 117); 
     margin-left: 50px; /*odsazeni Akvaristika*/
     text-decoration: none;
 
@@ -71,13 +70,13 @@ header ul li{
 header ul li a{         /*odrazky*/
     text-decoration:none;
     font-size: 1.5rem;
-    color:rgb(96, 151, 200);
+    color:rgb(232, 108, 117);
     font-weight: 100;
     padding: 15px;
 
 }
 header ul li a:hover{
-    color:rgb(108, 69, 10);
+    color:rgb(193, 113, 166);
 }
 
 header .menu{
@@ -93,7 +92,7 @@ header .menu{
     padding-top: 15.5rem;
     height: 618px;
     margin:auto;
-    color: #b11010;
+    color: rgb(123, 112, 179);
     
 }
 
@@ -121,7 +120,7 @@ header .menu{
 .showcase .tlacitko{
     width: 160px;
     height: 40px;
-    background: #00ff48;
+    background: rgb(232, 108, 117);
    
     border: none;
     margin-bottom: 10px;
@@ -135,23 +134,23 @@ header .menu{
 
 .showcase .tlacitko a{
     text-decoration:none;
-    color: #ff0000;
+    color: rgb(119, 19, 94);
     transition: .3s ease;
 }
 
 .tlacitko:hover{
-    background-color: #fff;
+    background-color: rgb(193, 113, 166);
 }
 
 .showcase span{
-    color: #000000;
+    color: rgb(189, 75, 100);
     font-size: 65px
 }
 
 /*tri odrazky*/
 
 #coze{
-    background: #9b2bba;
+    background: rgb(49, 24, 45);
 }
 
 #coze .items {
@@ -159,6 +158,7 @@ header .menu{
     padding: 1rem;
     justify-content: space-between;
     margin: 0px;
+    color: rgb(193, 113, 166);
 }
 
 #coze .item {
@@ -173,7 +173,7 @@ header .menu{
 }
 
 #coze .items .item i {
-    background: rgb(220, 28, 28);
+    background: rgb(80, 61, 176);
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
@@ -187,18 +187,20 @@ header .menu{
 
 .m-heading{
     font-size: 3rem;
+    color: rgb(193, 113, 166);
 }
 /*footer*/
 
 #main-footer {
     margin: 0px;
-    background-color: #4a15d1;
+    background-color: rgb(49, 24, 45);
+    color: rgb(193, 113, 166);
 }
 
-/*akvaristika obrazky*/
+/*akvaristika - obrazky jednotlivych ryb*/
 .gallery{
     display: inline-block;
-    border: 1px solid hsl(0, 88%, 32%);
+    border: 2px solid rgb(189, 75, 100);
     margin: 5px;
     width: 250px;
     margin-left: 6.4rem;
@@ -211,7 +213,7 @@ header .menu{
     padding-top: 10px;
 
     text-align: center;
-    background-color:rgb(24, 129, 226);
+    background-color:rgb(189, 75, 100);
     
 }
 
@@ -220,14 +222,14 @@ header .menu{
     text-align: center;
     font-size: 15px;
     color: #4e4d4e;
-    background-color:rgb(24, 129, 226);
+    background-color:rgb(193, 113, 166);
 }
 .gallery:hover{
-    border: 1px solid hsl(312, 86%, 30%);
+    border: 2px solid rgb(80, 61, 176);
 }
 .gallery img{
     width: 100%;
-    height: auto;
+    height: 220px;
 }
 
 /*info skalar*/
@@ -264,26 +266,26 @@ header .menu{
 
 
 h5 {
-    color: #fefae0;
+    color: rgb(189, 75, 100);
     font-family: Arial;
     margin: 20px auto;
     width: 450px;
     font-size: 3rem;
     text-align: center;
-    border-bottom: 10px double #bc6c25;
+    border-bottom: 10px double rgb(119, 19, 94);
 }
 
 .galerie img {
     width: 450px;
     height: 300px;
     margin: 10px;
-    border: 5px solid #ffffff;
-    filter:grayscale(50%);
+    border: 5px solid rgb(189, 75, 100);
+    
     transition-duration: 1s; 
 }
 
 .galerie img:hover {
-    border: 5px solid #fff;
+    border: 5px solid rgb(119, 19, 94);
     -webkit-transform: scale(1.9);
     -ms-transform: scale(1.1);
     transform: scale(1.05); /*jak moc se fotka přiblíží*/
@@ -316,7 +318,8 @@ h5 {
       font-size: 2.0em;
       letter-spacing: 1px;
       padding: 40px;
-      color: white;
+      color: rgb(189, 75, 100);
+      
   }
   
   .gallery-image {
@@ -324,6 +327,7 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
   }
   
   .gallery-image img {
@@ -356,7 +360,7 @@ h5 {
   .transparent-box {
     height: 250px;
     width: 350px;
-    background-color:rgba(0, 0, 0, 0);
+    background-color:rgba(219, 21, 21, 0);
     position: absolute;
     top: 0;
     left: 0;
@@ -433,7 +437,7 @@ h5 {
     text-align: center;
     border: 0.125rem solid;
     border-collapse: collapse;
-    background-color: #333131;
+    background-color: #3b022c;
     
 }
 
@@ -459,7 +463,7 @@ h5 {
 .desc h2 {
     margin-right: 10vw;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 .desc h3 {
     margin: 0;
@@ -479,10 +483,20 @@ padding: 10px;
 height: 40vh;
 width: 1170px;
 position: relative;
+color: #ffffff;
 }
 .full {
-    background:url(/obrazky/bojovnice\ pestrá_radaveterináře.cz-big.jpg)  center center/cover; 
+    background:url(/obrazky/vinova.png)  center center/cover; 
+    
     position: relative;
     width: 1200px;
     margin: auto;
+}
+
+.inttext{
+    color:rgb(231, 7, 156);
+    text-decoration: none;
+}
+.inttext:hover{
+    color:rgb(193, 113, 166);
 }
