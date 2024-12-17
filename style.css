@@ -258,44 +258,6 @@ header .menu{
     height: auto;
 }
 
-/*tabulka skalar*/
-.table {
-    height:14vw;
-    width: 60%;
-    grid-area: table;
-    margin-left: 0.4rem;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.table table {
-    
-    height: 100%;
-    width: 100%;
-    table-layout:auto;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: center;
-}
-
-.table caption {
-    caption-side: top;
-    text-align: center;
-}
-
-.table th {
-    
-    background-color: #08551f;
-    color: #d50e0e;
-    padding: 5px;
-}
-
-.table td {
-    border: 1px solid #ffffff;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px;
-}
 
 /*galerie*/
 
@@ -447,3 +409,80 @@ h5 {
     object-position: center;
 }
 
+
+/*seznam ryb*/
+.table {
+    height:18vw;
+    width: 60%;
+    grid-area: table;
+    margin-left: 0.4rem;
+    padding-left: 50px;
+    padding-right: 30px;
+    margin-right: 70px;
+    font-size: 20px;
+    
+}
+
+.table table {
+
+    height: 100%;
+    width: 100%;
+    table-layout:auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: center;
+    border: 0.125rem solid;
+    border-collapse: collapse;
+    background-color: #333131;
+    
+}
+
+.container2 {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    position: relative;
+}
+.container2 img {
+    padding: 10px;
+
+    padding-top: 30px;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.desc h2 {
+    margin-right: 10vw;
+    margin: 0;
+    font-size: 2.5em;
+}
+.desc h3 {
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.desc ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.text {
+margin-left: 10px;
+margin-right: 110px;
+border: 1px solid black;
+padding: 10px;
+height: 40vh;
+width: 1170px;
+position: relative;
+}
+.full {
+    background:url(/obrazky/bojovnice\ pestrá_radaveterináře.cz-big.jpg)  center center/cover; 
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
