@@ -13,6 +13,13 @@ body{
 
 }
 
+.obrazek {
+    height: 45px;
+    width: 45px;
+    vertical-align: bottom;
+
+}
+
 .container{
     width: 100%;
     height: auto;
@@ -489,6 +496,7 @@ color: #ffffff;
    background-color: rgba(65,18,45);
     width: 1200px;
     margin: auto;
+    color: beige;
 }
 
 .inttext{
