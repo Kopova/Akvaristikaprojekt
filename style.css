@@ -486,7 +486,7 @@ position: relative;
 color: #ffffff;
 }
 .full {
-    background:url(./obrazky/vinova.png)  center center/cover; 
+    background:url(../obrazky/vinova.png)  center center/cover; 
     
     position: relative;
     width: 1200px;
