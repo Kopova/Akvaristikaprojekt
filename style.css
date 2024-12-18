@@ -486,9 +486,7 @@ position: relative;
 color: #ffffff;
 }
 .full {
-    background:url(../obrazky/vinova.png)  center center/cover; 
-    
-    position: relative;
+   background-color: rgba(65,18,45);
     width: 1200px;
     margin: auto;
 }
