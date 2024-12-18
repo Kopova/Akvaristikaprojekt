@@ -500,3 +500,12 @@ color: #ffffff;
 .inttext:hover{
     color:rgb(193, 113, 166);
 }
+
+.text a{
+    color:#102583;
+    text-decoration: none;
+}
+
+.text a:hover{
+    color:#d324d3;
+}
