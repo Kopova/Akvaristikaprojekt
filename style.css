@@ -570,11 +570,17 @@ textarea {
 [type="submit"]:hover { background:rgb(119, 19, 94); }
 
 
+.videjko {
+    max-width: 700px;
+    
+}
+
+
 /* responsive */
 
 @media screen and (max-width: 950px) {
     .container2 img {width: 100px;}
-    .table { width: 50%;}
+    .table { width: 50%; }
     .container2 {padding-left:10px;}
     #coze .item h4{font-size: 1rem;}
     #coze .item{font-size: 12px;}
@@ -589,9 +595,10 @@ textarea {
     label {display: inline-flex;}
     #toggler:checked~.topnav{max-height: 100%;}
     .lisst{flex-direction: column; align-items:end; padding: 20px;}
-    .full{font-size: 2rem; height: 200vh;}
-    .desc h2{font-size: 2rem;}
+    .full{font-size: 2rem; height: 200vh; width: 600px;}
+    .desc h2{font-size: 1.5rem;}
+    .desc li{font-size: 1rem;}
     .desc h3{font-size: 1.75rem;}
-    .text{font-size: 2rem;}
+    .text{font-size: 1rem;max-width: fit-content;}
     
 }
