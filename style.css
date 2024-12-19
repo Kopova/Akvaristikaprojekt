@@ -119,7 +119,7 @@ color:rgb(193, 113, 166);
 }
 
 .showcase h2{
-    font-family: 'Times New Roman';
+    color:rgb(232, 108, 117);
     font-size: 50px;
     padding-left: 20px;
     
@@ -573,11 +573,12 @@ textarea {
 /* responsive */
 
 @media screen and (max-width: 950px) {
-    .container img {width: 100px;}
-    .table { width: 30%;}
-    .container {padding-left:10px;}
+    .container2 img {width: 100px;}
+    .table { width: 50%;}
+    .container2 {padding-left:10px;}
     #coze .item h4{font-size: 1rem;}
     #coze .item{font-size: 12px;}
+    .showcase h2{font-size: 2rem;}
     
     } 
 
@@ -589,5 +590,8 @@ textarea {
     #toggler:checked~.topnav{max-height: 100%;}
     .lisst{flex-direction: column; align-items:end; padding: 20px;}
     .full{font-size: 2rem; height: 200vh;}
+    .desc h2{font-size: 2rem;}
+    .desc h3{font-size: 1.75rem;}
+    .text{font-size: 2rem;}
     
 }
