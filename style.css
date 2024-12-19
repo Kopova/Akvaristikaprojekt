@@ -6,28 +6,22 @@
 }
 
 body{
-    background:url(./obrazky/llllllllllllllll.png) center center/cover;
+    background:url(./obrazky/llllllllllllllll.png) center/cover;
     background-size: cover;
     height: 100vh;
     background-position: center;
 
 }
 
-.obrazek {
-    height: 100px;
-    width: 100px;
-    vertical-align: bottom;
+
+
+.containerfooter{
+    max-width: 1100px;
+    margin: auto;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
     
-
-}
-
-.container{
-    width: 100%;
-    height: auto;
-    background-color: rgba(0,0,0,0.4);
-    display:block;
-    align-items: center;
-    justify-content: center;
 }
 
 .background-clip{
@@ -35,62 +29,72 @@ body{
     right: 0;
     bottom: 0;
     z-index: -1;
+   
 }
 
-header{
-    width: 100%;
-    height: 85px;
-    display:flex;
-    justify-content: space-between;
-    align-content: space-between;
-    align-items: center;
+
+#navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between; 
     position: sticky;
+    top: 0;
+    background-color: rgba(58,18,43, 0.5);
+    color: white;
+    padding: 1rem;
+
+    width: 100%;
     z-index: 99;
     box-shadow: 0 0 10px #000;
-    background: rgba(58,18,43, 0.5);
+}
+
+    #logo{
+        font-size: 3.3rem;
+       
+    }
+    
+.obrazek {
+    height: 70px;
+    width: 70px;
+    vertical-align: bottom;
+
+}
+
+#navbar a {
+    color:rgb(232, 108, 117); 
+    font-weight: bold; 
+    text-decoration: none;
+}
+#navbar a:hover{
+    color: rgb(193, 113, 166);
+}
+.topnav a {
+    text-decoration: none;
+    float: left;
+    display: inline;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 16px 16px 16px 16px;
+    font-size: 20px;
+    
     
 }
-header .logo a{
-    text-decoration: none;
-}
-
-header .logo h1{
-    flex:2;
-    font-size: 3rem; /*velikost slova Akvaristika*/
-    color:rgb(232, 108, 117); 
-    margin-left: 50px; /*odsazeni Akvaristika*/
-    text-decoration: none;
-
+.lisst {
+    display: flex;
+    list-style: none;
 
 }
 
-header ul{
-    flex:2; 
-    display: flex; /*dání odrážek vedle sebe*/
-    justify-content:center; /*mezery mezi odrazkami*/
-}
-
-header ul li{
-    list-style: none; /*odrazky pryc*/
-
-}
-
-header ul li a{         /*odrazky*/
-    text-decoration:none;
-    font-size: 1.5rem;
-    color:rgb(232, 108, 117);
-    font-weight: 100;
-    padding: 15px;
-
-}
-header ul li a:hover{
-    color:rgb(193, 113, 166);
-}
-
-header .menu{
-    font-size: 2.5rem;
+#toggler, label {
     display: none;
+    padding: 16px;
+    color:rgb(232, 108, 117);
 
+}
+#toggler, label:hover {
+border-radius: 5px;
+color:rgb(193, 113, 166);
 }
 
 /*showacse*/
@@ -98,7 +102,7 @@ header .menu{
 .showcase{
     
     padding-top: 15.5rem;
-    height: 618px;
+    height: 600px;
     font-size: 20px;
     margin:auto;
     color: rgb(123, 112, 179);
@@ -220,9 +224,10 @@ header .menu{
 }
 .gallery .description{
     padding-top: 10px;
-
+    padding-bottom: 7px;
     text-align: center;
     background-color:rgb(189, 75, 100);
+
     
 }
 
@@ -289,7 +294,7 @@ h5 {
     height: 300px;
     margin: 10px;
     border: 5px solid rgb(189, 75, 100);
-    
+    margin-bottom: 8rem;
     transition-duration: 1s; 
 }
 
@@ -308,6 +313,7 @@ h5 {
     flex-wrap: wrap;
     justify-content:center;
     align-items:center;
+    
 }
 
 .stred {
@@ -398,11 +404,7 @@ h5 {
   }
 /*respon*/
 
-@media only screen and (max-width: 700px) {
-    .container img {width: 100px;}
-    .table { width: 30%;}
-    .container {padding-left:10px;}
-    } 
+
 
   .zmena {
     position: absolute;
@@ -563,5 +565,29 @@ textarea {
   transition: all 0.3s;
   margin-top:-4px;
   font-weight:700;
+  margin-bottom: 6.5rem;
 }
 [type="submit"]:hover { background:rgb(119, 19, 94); }
+
+
+/* responsive */
+
+@media screen and (max-width: 950px) {
+    .container img {width: 100px;}
+    .table { width: 30%;}
+    .container {padding-left:10px;}
+    #coze .item h4{font-size: 1rem;}
+    #coze .item{font-size: 12px;}
+    
+    } 
+
+
+
+@media screen and (max-width: 950px){
+    .topnav { width:100% ; max-height: 0; overflow: hidden;}
+    label {display: inline-flex;}
+    #toggler:checked~.topnav{max-height: 100%;}
+    .lisst{flex-direction: column; align-items:end; padding: 20px;}
+    .full{font-size: 2rem; height: 200vh;}
+    
+}
